@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConversaoMoedas.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <!-- Campo de entrada para o valor -->
+            <Entry 
+                x:Name="ValorEntrada"
+                Placeholder="Insira o valor a ser convertido"
+                Keyboard="Numeric"
+                HorizontalOptions="Fill" />
+
+            <!-- Botões de conversão -->
+            <Button
+                x:Name="BtnConverterDolar"
+                Text="Converter Dólar para Real"
+                Clicked="ConverterDolarParaReal"
+                HorizontalOptions="Fill" />
+
+
+            <Button
+                x:Name="BtnConverterRealParaDolar"
+                Text="Converter Real para Dólar"
+                Clicked="ConverterRealParaDolar"
+                HorizontalOptions="Fill" />
+
+            <!-- Rótulo para exibir o resultado da conversão -->
+            <Label
+                x:Name="ResultadoConversao"
+                Text="Resultado da conversão aparecerá aqui"
+                HorizontalOptions="Fill"
+                FontSize="Large" />
+
+            <!-- Botão de reset -->
+            <Button
+                x:Name="BtnReset"
+                Text="Limpar"
+                Clicked="LimparCampos"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

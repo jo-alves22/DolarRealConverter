@@ -1,0 +1,11 @@
+# Ignorar pastas do Visual Studio
+.vs/
+
+# Ignorar pastas de build
+bin/
+obj/
+
+# Arquivos de usuário e configurações temporárias
+*.user
+*.suo
+*.csproj.user
